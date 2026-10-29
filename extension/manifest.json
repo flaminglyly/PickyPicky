@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "红果短剧下载助手",
+  "version": "0.1.0",
+  "description": "检测指定浏览器播放页的视频资源，按短剧名称下载可直接保存的视频。",
+  "minimum_chrome_version": "102",
+  "permissions": ["activeTab", "scripting", "storage", "downloads", "webRequest"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "background": {"service_worker": "background.js", "type": "module"},
+  "action": {"default_popup": "popup.html", "default_title": "红果短剧下载助手"}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "hongguo-local-tool",
+  "version": "0.6.9",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "1.20.0"
+  }
+}

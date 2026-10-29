@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+pc/downloads/
+pc/.runtime/
+node_modules/
+
+# Local machine state, credentials and diagnostic reports
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+.agents/
+.codex/
+.aws/
+docs/

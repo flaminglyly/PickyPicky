@@ -1,0 +1,48 @@
+*{box-sizing:border-box}body{background:#f5f5f2;color:#232823;font:15px system-ui;margin:0}main{max-width:1000px;padding:56px 28px;margin:auto}header span{font-size:11px;letter-spacing:2px;color:#9c5846}h1{font-size:42px;letter-spacing:-1px;margin:15px 0}header p,footer{color:#737870;line-height:1.8}section{background:#fff;padding:26px;border:1px solid #e1e3db;border-radius:16px;margin-top:26px}label{display:block}textarea{width:100%;min-height:110px;margin:12px 0 16px;border:1px solid #d8ddd2;border-radius:9px;padding:14px;font:inherit}button{border:0;background:#344e40;color:white;padding:12px 19px;border-radius:8px;cursor:pointer}button:disabled{opacity:.5;cursor:wait}.secondary{background:#e9ede7;color:#344e40}.toolbar{display:flex;gap:10px;flex-wrap:wrap}#status{color:#865336;line-height:1.7}#notice{background:#f4f2e9;padding:14px;line-height:1.7}#episodes{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin-top:16px}.episode{border:1px solid #e2e7df;padding:12px;border-radius:8px;overflow-wrap:anywhere}.episode small{display:block;color:#737870;line-height:1.8}.episode .error{color:#ad3a29}footer{font-size:12px;margin-top:24px}input[type=checkbox]{accent-color:#344e40}@media(max-width:600px){main{padding:24px 16px}h1{font-size:30px}}
+
+select{display:block;width:100%;padding:12px;border:1px solid #d8ddd2;border-radius:8px;margin:10px 0 16px;background:white;font:inherit}
+
+.local-file{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid #e2e7df}.local-file label{flex:1;overflow-wrap:anywhere}.local-file button{padding:8px 12px;flex-shrink:0}#local-files{max-height:440px;overflow:auto;margin-bottom:16px}#local-status{overflow-wrap:anywhere;line-height:1.7}
+
+html{scroll-behavior:smooth}section{scroll-margin-top:20px}#output-name{width:100%;font:inherit;padding:12px;margin-top:10px;border:1px solid #d8ddd2;border-radius:8px}.history-item{padding:18px 0;border-bottom:1px solid #e2e7df;overflow-wrap:anywhere}.history-item p{color:#737870;font-size:13px}.history-item summary{cursor:pointer}
+
+[hidden]{display:none!important}.brand-row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}#version-link{font-size:13px;color:#526357;text-decoration:none;padding:7px 12px;background:#e9ede7;border-radius:20px}.primary-nav{display:flex;gap:8px;margin-top:26px;border-bottom:1px solid #d8ddd2;padding-bottom:12px}.primary-nav a{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:8px;text-decoration:none;background:transparent;color:#526357;font-size:16px;font-weight:600}.primary-nav a.active{background:#344e40;color:#fff}.sub-nav{display:flex;flex-wrap:wrap;gap:4px 24px;margin-top:24px;padding:0 14px;background:#ecefe9;border-radius:8px;border-bottom:1px solid #d8ddd2}.sub-nav a{display:inline-flex;align-items:center;min-height:44px;padding:10px 2px;background:transparent;color:#526357;font-size:14px;font-weight:400;text-decoration:none;border-radius:0;border-bottom:2px solid transparent}.sub-nav a:hover{color:#232823;border-bottom-color:#adb8aa}.sub-nav a.active{color:#263e30;font-weight:600;border-bottom-color:#344e40}.primary-nav a:focus-visible,.sub-nav a:focus-visible{outline:2px solid #865336;outline-offset:4px}.page-heading{background:transparent;padding:16px 0 0;border:0;margin:0}.page-heading h2{margin-bottom:8px}.page-heading p{color:#737870}.release-item{padding:12px 0 22px;border-bottom:1px solid #e2e7df}.release-item p{color:#737870}.release-item li{line-height:1.9}#directory-merge{margin-top:20px}#directory-merge summary{cursor:pointer;color:#526357}
+
+.search-input-row{display:flex;gap:10px;margin-top:10px}.search-input-row input{flex:1;min-width:0;padding:12px;border:1px solid #d8ddd2;border-radius:8px;font:inherit}#search-results{display:grid;gap:18px;margin:18px 0}.search-card{display:flex;gap:18px;padding:16px;border:1px solid #e2e7df;border-radius:12px}.search-poster{position:relative;flex:0 0 120px;align-self:flex-start;aspect-ratio:3/4;background:#ecefe9;border-radius:8px;overflow:hidden;display:grid;place-items:center;color:#737870;font-size:13px}.search-poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.search-card-body{min-width:0}.search-card h3{margin:0 0 8px}.search-card p{line-height:1.6}.search-card a{color:#344e40}.search-card .toolbar{margin-top:14px}.search-intro{color:#737870;font-size:13px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}#search-status{overflow-wrap:anywhere}@media(max-width:600px){.search-poster{flex-basis:84px}.search-card{gap:12px;padding:12px}.search-card button{padding:10px;font-size:12px}.search-input-row button{padding:12px}}
+
+.local-file-actions{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}.local-file label{min-width:0}@media(max-width:640px){.local-file{flex-wrap:wrap}.local-file label{flex-basis:100%}.local-file-actions{width:100%}}
+
+.episode-pagination{margin-top:16px;flex-wrap:wrap;align-items:center}.episode-pagination select{width:auto;margin:0}.episode-pagination label{margin:0}.episode-pagination span{flex-basis:100%}
+
+/* Task state uses labels plus color; no flashing or blocking browser alerts. */
+[data-task-state="running"]{color:#1555a0!important;background:#e9f2ff;border-left:4px solid #2875ce;padding:12px 16px;border-radius:8px;font-weight:700;line-height:1.7}
+[data-task-state="success"]{color:#22623d!important;background:#eaf6ed;border-left:4px solid #328553;padding:12px 16px;border-radius:8px;font-weight:600}
+[data-task-state="problem"]{color:#9e351f!important;background:#fff0e8;border-left:4px solid #cf5735;padding:12px 16px;border-radius:8px;font-weight:700}
+.task-dialog{border:0;border-top:5px solid #328553;border-radius:14px;padding:24px;max-width:min(560px,90vw);box-shadow:0 16px 64px #0004;color:#232823}
+.task-dialog[data-state="problem"]{border-top-color:#cf5735}.task-dialog::backdrop{background:#17251f66}.task-dialog h2{margin:0 0 16px;font-size:21px}.task-dialog p{white-space:pre-wrap;overflow-wrap:anywhere;max-height:50vh;overflow:auto;line-height:1.8}.task-dialog button{float:right}
+
+.task-summary-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:5px 0;overflow-wrap:anywhere}.task-summary-row small{font-size:13px;font-weight:400}.task-summary-row progress{width:160px;max-width:100%;height:16px;accent-color:#2875ce}
+
+.header-workspace{display:grid;grid-template-columns:minmax(300px,2fr) minmax(0,3fr);gap:28px;align-items:start;margin-top:18px;padding-bottom:12px;border-bottom:1px solid #d8ddd2}
+.header-intro{min-width:0}.header-intro h1{margin-top:0}.header-intro .primary-nav{border-bottom:0;margin-top:22px;padding-bottom:0}
+.header-task-panel{min-width:0;background:#eef2ed;border:1px solid #dbe3d9;border-radius:12px;padding:16px 18px}
+#task-status-heading{font-size:16px;margin:0 0 10px}.header-task-panel #task-summary{margin:0;font-size:14px;line-height:1.6}
+.header-task-panel span{font-size:inherit;letter-spacing:normal;color:inherit}.header-task-panel .task-summary-row small{font-size:12px}
+@media(max-width:760px){.header-workspace{grid-template-columns:1fr;gap:18px}.header-task-panel{padding:14px}.header-intro .primary-nav{margin-top:18px}}
+
+.header-task-panel .task-panel-help{margin:12px 0 0;padding-top:12px;border-top:1px solid #dbe3d9;font-size:12px;line-height:1.75;color:#626e64;font-weight:400}
+
+/* Equal-height desktop header columns, with navigation anchored to the bottom. */
+@media(min-width:761px){
+ .header-workspace{align-items:stretch}
+ .header-intro{display:flex;flex-direction:column}
+ .header-intro h1{margin-top:0}
+ .header-intro .primary-nav{margin-top:auto;padding-top:22px}
+}
+
+/* Secondary navigation: stronger contrast while distinct from primary buttons. */
+.sub-nav{gap:6px 12px;padding:6px 10px;background:#e5ebe3;border:1px solid #d2ddcf;border-radius:10px}
+.sub-nav a{min-height:46px;padding:10px 14px;font-size:16px;font-weight:600;color:#405643;border-radius:6px;border-bottom:3px solid transparent}
+.sub-nav a:hover{color:#203e29;background:transparent;border-bottom-color:#8da486}
+.sub-nav a.active{color:#203e29;background:transparent;font-weight:700;border-bottom-color:#466b3d}
+@media(max-width:600px){.sub-nav{gap:4px;padding:6px}.sub-nav a{font-size:15px;padding:10px 12px}}
